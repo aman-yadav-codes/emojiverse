@@ -78,7 +78,7 @@ const Footer = () => {
               `transition-all hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black duration-300 ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
-                  : "text-white hover:text-gray-300"
+                  : "text-white hover:text-black"
               }`
             }
           >
@@ -90,7 +90,7 @@ const Footer = () => {
               `transition-all duration-300 hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
-                  : "text-white hover:text-gray-300"
+                  : "text-white hover:text-black"
               }`
             }
           >
@@ -102,7 +102,7 @@ const Footer = () => {
               `transition-all hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black duration-300 ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
-                  : "text-white hover:text-gray-300"
+                  : "text-white hover:text-black"
               }`
             }
           >
@@ -111,10 +111,10 @@ const Footer = () => {
           <NavLink
             to="/Github"
             className={({ isActive }) =>
-              `transition-all hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black duration-300 ease-in-out ${
+              `transition-all hover:px-3 hover:py-1 hover:bg-white hover:rounded-full  duration-300 ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
-                  : "text-white hover:text-gray-300"
+                  : "text-white hover:text-black "
               }`
             }
           >
