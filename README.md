@@ -37,7 +37,7 @@ Welcome to **Emojiverse**, the ultimate platform where emojis meet creativity! P
    npm run dev
    ```
 
-   🚀 Navigate to \`http://localhost:3000\` to experience the Emojiverse in all its glory! 🌈
+   🚀 Navigate to \`http://localhost:5173\` to experience the Emojiverse in all its glory! 🌈
 
 ### ⚡️ Features at a Glance:
 - **Fast Refresh with React**: Keep your changes in sync with HMR, providing an instantaneous preview of your updates. 🌀
