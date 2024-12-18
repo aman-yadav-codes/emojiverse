@@ -1,26 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/happy-emoji.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>EmojiVerse</title>
   </head>
   <!-- hello there   -->
-  <body style="background-color: #101011;">
+  <body style="background-color: #101011">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    
+
     <script>
       // Detect if the system is in dark mode
-      const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
       // Function to apply dark mode styles
       function applyDarkMode() {
         if (darkModeQuery.matches) {
-          document.body.style.backgroundColor = "#1a1a1a";  // Dark background color for dark mode
+          document.body.style.backgroundColor = "#1a1a1a"; // Dark background color for dark mode
         } else {
-          document.body.style.backgroundColor = "#ffffff";  // Light background color for light mode
+          document.body.style.backgroundColor = "#ffffff"; // Light background color for light mode
         }
       }
 

@@ -23,16 +23,25 @@ const Home = () => {
     setIsOpen(false);
   };
 
-  const fetchapidata = async (categoryname, by) => {
-    setLoading(true);
-    const url = `https://emojihub.yurace.pro/api/all/${by}/${categoryname}`;
+ const fetchapidata = async (categoryname, by) => {
+  setLoading(true);
+  const url = `https://emojihub.yurace.pro/api/all/${by}/${categoryname}`;
+  try {
     const response = await fetch(url);
     const data = await response.json();
-    setapidata(data);
+
+    if (!data || Object.keys(data).length === 0) {
+      toast.error("No data found! Please try again.");
+    } else {
+      setapidata(data);
+    }
+  } catch (error) {
+    toast.error("Something went wrong! Please try again.");
+  } finally {
     setLoading(false);
-    console.log(url);
-    console.log(data);
-  };
+  }
+
+};
 
   // Function to handle category selection
   const handleCategoryClick = (category) => {
@@ -40,7 +49,6 @@ const Home = () => {
     setSelectedGroup(null);
     fetchapidata(category, "category");
     setIsOpen(true);
-    console.log("Selected Category:", category);
   };
 
   // Function to handle group selection
@@ -49,7 +57,6 @@ const Home = () => {
     setSelectedCategory(null);
     fetchapidata(group, "group");
     setIsOpen(true);
-    console.log("Selected Group:", group);
   };
 
   const categories = [

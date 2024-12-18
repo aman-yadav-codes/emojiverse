@@ -7,39 +7,8 @@ const Github = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Dummy data
-  const dummyRepos = [
-    {
-      id: 1,
-      name: "Project-1",
-      description: "This is Project 1.",
-      html_url: "https://github.com/aman-yadav-codes/project-1",
-    },
-    {
-      id: 2,
-      name: "Project-2",
-      description: "This is Project 2.",
-      html_url: "https://github.com/aman-yadav-codes/project-2",
-    },
-    {
-      id: 3,
-      name: "Project-3",
-      description: "This is Project 3.",
-      html_url: "https://github.com/aman-yadav-codes/project-3",
-    },
-    {
-      id: 4,
-      name: "Project-4",
-      description: "This is Project 4.",
-      html_url: "https://github.com/aman-yadav-codes/project-4",
-    },
-    {
-      id: 5,
-      name: "Project-5",
-      description: "This is Project 5.",
-      html_url: "https://github.com/aman-yadav-codes/project-5",
-    },
-  ];
+
+
 
   useEffect(() => {
     const fetchGithubRepos = async () => {
@@ -106,20 +75,20 @@ const Github = () => {
           ? repos.map((repo) => (
               <div
                 key={repo.id}
-                className="bg-white p-6 rounded-lg hover:scale-110 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer"
+                className="bg-white dark:bg-gray-900 p-6 rounded-lg hover:scale-110 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer"
                 onClick={() => window.open(repo.html_url, "_blank")}
               >
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                <h3 className="text-2xl dark:text-white font-semibold capitalize text-gray-800 mb-2">
                   {repo.name}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 dark:text-white text-sm">
                   {repo.description || "No description available."}
                 </p>
                 <p className="text-sm text-blue-500 mt-4">Go to Repository →</p>
               </div>
             ))
           : // Fallback to dummy data if repos are empty
-            dummyRepos.map((repo) => (
+            repos.map((repo) => (
               <div
                 key={repo.id}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg hover:scale-110 shadow-lg hover:shadow-xl transition duration-300 cursor-pointer"

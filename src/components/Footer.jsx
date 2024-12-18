@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -35,16 +37,19 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/aman-yadav-174029290"
                 target="_blank"
-                className="text-gray-400 text-sm hover:text-gray-300 transition"
+                className="text-gray-400 flex justify-center items-center gap-1 text-sm hover:text-gray-300 transition"
               >
+                <BsLinkedin />
                 LinkedIn
-              </a>
+              </a>{" "}
+              <div className="bg-gray-700  w-[1px]"></div>
               <br />
               <a
                 href="https://github.com/aman-yadav-codes"
                 target="_blank"
-                className="text-gray-400 text-sm hover:text-gray-300 transition"
+                className="text-gray-400 flex justify-center items-center gap-1 text-sm hover:text-gray-300 transition"
               >
+                <FaGithub />
                 Github
               </a>
             </div>
@@ -52,8 +57,16 @@ const Footer = () => {
 
           {/* Address */}
           <div>
-            <h3 className="text-lg font-semibold mb-2">Design By </h3>
-            <p className="text-sm">Aman Yadav</p>
+            <h3 className="text-lg font-semibold mb-2 ">Design By </h3>
+            <p className="text-sm relative overflow-hidden rounded-lg px-2  transition-all duration-300 ease-in-out group">
+              <a
+                href="https://github.com/aman-yadav-codes"
+                className="relative z-10 "
+              >
+                Aman Yadav
+              </a>
+              <span className="absolute inset-0 bg-red-600  transition-all transform scale-x-0 group-hover:scale-x-100 origin-center h-full"></span>
+            </p>
           </div>
         </div>
 
@@ -62,7 +75,7 @@ const Footer = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `transition-all duration-300 ease-in-out ${
+              `transition-all hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black duration-300 ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
                   : "text-white hover:text-gray-300"
@@ -74,7 +87,7 @@ const Footer = () => {
           <NavLink
             to="/About"
             className={({ isActive }) =>
-              `transition-all duration-300 ease-in-out ${
+              `transition-all duration-300 hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
                   : "text-white hover:text-gray-300"
@@ -86,7 +99,7 @@ const Footer = () => {
           <NavLink
             to="/Usage"
             className={({ isActive }) =>
-              `transition-all duration-300 ease-in-out ${
+              `transition-all hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black duration-300 ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
                   : "text-white hover:text-gray-300"
@@ -98,7 +111,7 @@ const Footer = () => {
           <NavLink
             to="/Github"
             className={({ isActive }) =>
-              `transition-all duration-300 ease-in-out ${
+              `transition-all hover:px-3 hover:py-1 hover:bg-white hover:rounded-full hover:text-black duration-300 ease-in-out ${
                 isActive
                   ? "font-bold bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200"
                   : "text-white hover:text-gray-300"
