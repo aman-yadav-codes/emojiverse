@@ -19,7 +19,7 @@ Welcome to **Emojiverse**, the ultimate platform where emojis meet creativity! P
 
 1. Clone the repo:
    ```
-   git clone https://github.com/yourusername/emojiverse.git
+   git clone https://github.com/aman-yadav-codes/emojiverse.git
 
    ```
    ```
