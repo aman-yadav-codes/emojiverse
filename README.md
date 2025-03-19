@@ -55,8 +55,6 @@ Welcome to **Emojiverse**, the ultimate platform where emojis meet creativity! P
 ---
 
 
----
-
 ### 🌍 Discover the Emojiverse!
 
 Step into a world where every emotion has a symbol, and creativity knows no bounds. 🚀✨ Let's create and share the universe of emojis together!
