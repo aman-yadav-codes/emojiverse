@@ -54,9 +54,6 @@ Welcome to **Emojiverse**, the ultimate platform where emojis meet creativity! P
 
 ---
 
-#### 📋 License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ---
 
